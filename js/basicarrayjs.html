@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bacic array</title>
+</head>
+<body>
+    <script>
+        let array1=["vasu",12,9.8];
+
+var arraycrudl=new Array();
+
+arraycrudl.push("vasudevan")
+arraycrudl.push(45);
+arraycrudl.push(true);
+arraycrudl.push('v');
+arraycrudl.push(78965456212);
+
+function list(data)
+        {
+            document.write("<br>"+data );
+        }
+
+        arraycrudl.map(list);
+
+        var runtimecvalue=prompt("please tell us which position you want delete")
+
+        arraycrudl=arraycrudl.filter((data,pos)=>
+        {
+            return data!==arraycrudl[runtimecvalue]; 
+        })
+        alert("Aftyer delete a values")
+        arraycrudl.map((data)=>
+        {
+            document.write(data+"<br>");
+        })
+ </script>
+    
+</body>
+</html>
